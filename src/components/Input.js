@@ -48,6 +48,8 @@ export default function Input() {
   };
   const reset = () => {
     setInputValue("")
+
+
   };
 
   const style = {
@@ -59,7 +61,7 @@ export default function Input() {
   return (
     <div className='widget-input container'>
       <h2>Input</h2>
-      <div style={style}>{inputValue.toUpperCase}</div> {/* STEP 3 */}
+      <div style={style}>{inputValue.toUpperCase()}</div> {/* STEP 3 */}
       <div>
         <input type='text' onChange={changeInput} /> {/* STEP 6 */}
         <button onClick={reset}>Reset</button>
